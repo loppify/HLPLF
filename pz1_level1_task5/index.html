@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Рівень 1, Завдання 5</title>
+</head>
+<body>
+    <h1>Відображення зображення</h1>
+    <div id="image-container"></div>
+
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const img = document.createElement('img');
+                img.src = data.imageUrl;
+                img.alt = "Завантажене зображення";
+                document.getElementById('image-container').appendChild(img);
+                console.log('Зображення успішно додано');
+            })
+            .catch(error => console.error('Помилка завантаження JSON:', error));
+    </script>
+</body>
+</html>

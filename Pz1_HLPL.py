@@ -6,7 +6,7 @@ def sumnum(num1, num2):
     return num1 + num2
 
 
-print(float(input()) + float(input()))
+# print(float(input()) + float(input()))
 
 
 # Рівень 2:
@@ -82,6 +82,6 @@ class Bookstore:
         for i in self.books:
             print(f"{i}: {self.books[i]} pcs")
 
-# bookshelf = Bookstore()
-# bookshelf + "1984" + "Dune" + "Clean code" + "Harry Potter" + "Dune" + "Dune"
-# bookshelf.view_all_books()
+bookshelf = Bookstore()
+bookshelf + "1984" + "Dune" + "Clean code" + "Harry Potter" + "Dune" + "Dune"
+bookshelf.view_all_books()
